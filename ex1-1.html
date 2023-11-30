@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ css</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="styletext.css">
     <style>
         h1 {
             color: red; /*เปลี่ยนสีหัวเรื่องใหญ่เป็นสีเเดง*/
@@ -26,15 +27,16 @@
             font-size: 50 pt;
         }
     
-    #myid{ /*100*/
+    h1#myid{ /*100*/
         font-size: 5pt;
+        color: coral;
     }
     .myclass{ /*10*/
         font-size: 10pt;
         color: red;
     }
     div p { /*2*/
-        font-size: 24pt;
+        font-size: 16pt;
     }
     #p.myclass div{ /*11*/
         font-size: 100pt;
@@ -44,14 +46,37 @@
        color: rgb(255,250,0); 
        font-size: 20pt;
     }
+    h1 {
+            color: red; /*เปลี่ยนสีหัวเรื่องใหญ่เป็นสีเเดง*/
+            font-size: 30pt;
+        
+        }
+        body{
+            font-size: 30px;
+        }
+    div{
+        font-size:  1.5em;
+
+    }
+        
+
     </style>
 </head>
 <body> 
     <h1>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ css</h1>
+    <div>
+    ตัวอักษร 1em 
+
+<p class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab hic, sapiente, ducimus ea, quasi fugiat vero labore corrupti consequatur debitis cumque temporibus. Provident ad ratione repellat error harum corporis?</p>
+
+    </div>
     <div  class="myid">
        <p class="myid">Lorem ipsum, dolor sit amet consectetur <span style="background-color: darkorange;"> elit. Accusamus minima repellendus itaque ad illum labore, iusto, pariatur natus velit est a saepe sequi? Porro aut ab repudiandae et at voluptate?</p>
     </div>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, blanditiis. Dolorem amet expedita nemo fugit, incidunt, quis iure obcaecati deserunt eum architecto hic reprehenderit ipsam ut quam, at quia earum!</p>
     <h2 style="font-size: 50pt; font-weight: bold;">การใช้งาน EXternal Style</h2>
+    <div>
+    <h3> ชอบเฉาก๊วย</h3> 
+    </div>
 </body>
 </html>
