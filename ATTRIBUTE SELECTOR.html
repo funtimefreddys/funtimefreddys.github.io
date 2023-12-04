@@ -3,34 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เลือกเอลิเมนต์ด้วย ATTRIBUTE SELECTOR</title>
+    <title>การเลือกทุกเอลิมเนต์ด้วย Attbute Selector</title>
     <style>
+
         h2[title="atitle"]{
             color: blueviolet;
         }
+        h2[title="firstTitle"]{
+            color: blue;
+        }
+        img {
+            height: 200px;
+
+        }
+        img[alt] {
+            border: solid blue 2px;
+        }
+        h3[title~="job"]{
+            font-style: italic;
+        }
+        h3[title~="joy"]{
+            text-decoration: underline;
+        }
+        h3[title~="title"]{
+            color: rgb(15, 112, 112);
+        }
+
+        p[lang|="en"]{
+            background-color: blueviolet;
+        }
+        a[href^="https"]{
+            color: red;
+            background-image: url(arrow.png);
+            background-repeat: on-repeat ;
+            background-position: right;
+            padding-right: 30px;
+        }
+
     </style>
 </head>
 <body>
-    <h1><center>เลือกเอลิเมนต์ด้วย ATTRIBUTE SELECTOR</center></h1>
-    <h2 title="atitle">ไม่มี ATTRIBUTE ชื่อ title </h2>
-    <h2 title="firsttitle">มี ATTRIBUTE ชื่อ title</h2>
-    <h1><center>การใช้งาน ATTRIBUTE SELECTOR</center></h1>
-    <style>
-        img{
-    height: 200px;
-        }
-    </style>
-    <Div>
-         <article>
-            <h2> First Set </h2>
-            <img class="pic1" src="img/acbf2c964e7ef156299a944da9da795a6b703dcar1-890-1064v2_hq.jpg" alt="กาตูน">
-            <img class="pic2" src="img/images.jpg" alt="เเมว" 
-         </article>
-         <hr>
+    <h1><center>การเลือกทุกเอลิมเนต์ด้วย Attbute Selector</center></h1>
+    <h2 title="atitle">not Attbute name title</h2>
+    <h2 title="firstTitle">Attbute title</h2>
+    <div>
         <article>
-            <h2>Firs set</h2>
-            <img src="acbf2c964e7ef156299a944da9da795a6b703dcar1-890-1064v2_hq.jpg" alt="">
+            <h2>First Set</h2>
+            <img class="pic1" src="img/acbf2c964e7ef156299a944da9da795a6b703dcar1-890-1064v2_hq.jpg" alt="คนน่ารัก">
+            <img class="pic2" src="img/images.jpg" alt="เเมว">
+            <img class="pic3" src="img/37444.jpg" alt="ธรรมชาติเกม">
         </article>
-    </Div>
+        <hr>
+        <article>
+            <h2>First Set</h2>
+            <img class="pic4" src="img/download.jpg" alt="หมา">
+            <img class="pic5" src="img/images (1).jpg" alt="เสือ">
+            <img class="pic6" src="img/images (2).jpg" alt="หมีเเพนด้า">
+        </article>
+    </div>
+    <h3 title="title job joy">ตัวที่1 ทดสอบการใช้งาน Attbute~=value</h3>
+    <h3 title="job">ตัวที่2 ทดสอบการใช้งาน Attbute~=value</h3>
+    <h3 title="joy">ตัวที่3 ทดสอบการใช้งาน Attbute~=value</h3>
+
+    <div>
+        <p lang="en">Hello</p>
+        <p lang="en-us">Hi</p>
+        <p lang="es">Hola</p>
+        <p lang="th">สวัสดี</p>
+
+    </div>
+    <h2><center>การใช้งาน Attbute^=value</center></h2>
+    <ul>
+        <li><a href="https://youtu.be/7CQPvJqea-M?si=2GjQ0SxRnBjMzIZn">youtube</a></li>
+        <li><a href="https://colorhunt.co/palettes/cold">color</a></li>
+        <li><a href="https://classroom.google.com/u/1/c/NTI5NzczNDU1MDky">classroom</a></li>
+    </ul>
+    <ol>
+        <li><a href="https://www.youtube.com/channel/UC_7V9LgrUUY-V15_pV746ZQ">youtube</a></li>
+        <li><a href="https://colorhunt">color</a></li>
+        <li><a href="https://classroom.google.com">classroom</a></li>
+    </ol>
+
+    
+
 </body>
 </html>
